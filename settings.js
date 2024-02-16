@@ -92,6 +92,10 @@ module.exports = Object.freeze({
               "/laravel/basics/installation",
               "/laravel/basics/mvc",
               "/laravel/basics/routing",
+              "/laravel/basics/mvc-views",
+              "/laravel/basics/mvc-layouts",
+              "/laravel/basics/mvc-controller",
+              "/laravel/basics/mvc-models",
               "/laravel/basics/forms-validation",
               "/laravel/basics/assets",
             ],
@@ -102,6 +106,7 @@ module.exports = Object.freeze({
             children: [
               "/laravel/databases/connecting",
               "/laravel/databases/migrations",
+              "/laravel/databases/seeding",
               "/laravel/databases/eloquent",
               "/laravel/databases/relations",
             ],
@@ -118,7 +123,10 @@ module.exports = Object.freeze({
           {
             title: "How to",
             path: "/laravel/how-to/",
-            children: ["/laravel/how-to/build-an-api"],
+            children: [
+              "/laravel/how-to/build-an-api",
+              "/laravel/how-to/laravel-ui"
+            ],
           },
           // {
           //   title: "Cheat Sheet",
