@@ -4,13 +4,15 @@
 
 Je kan via ddev en docker op een eenvoudige manier een server starten. Via deze ddev kan je ook een laravel project starten. [Installatie instructies...](https://ddev.readthedocs.io/en/latest/users/quickstart/#laravel)
 
+Maak een nieuwe folder aan `mkdir my-laravel-app` of doe een clone van de GitHub Classroom. (git clone URL)
+
+Ga via terminal in deze nieuwe folder `cd my-laravel-app`
+
 ``` shell
-mkdir my-laravel-app
-cd my-laravel-app
-ddev config --project-type=laravel --docroot=public --create-docroot --php-version=8.1
+ddev config --project-type=laravel --docroot=public --create-docroot --php-version=8.2
 ddev composer create --prefer-dist --no-install --no-scripts laravel/laravel -y
 ddev composer install
-ddev exec "ddev artisan key:generate"
+ddev artisan key:generate
 ddev launch
 ```
 
